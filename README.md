@@ -13,3 +13,26 @@ To use **theHarvester**, execute the following commands:
 - **Display help:**  
   ```bash
   theHarvester -h
+
+- **Search emails and subdomains for a specific domain:**
+  ```bash
+  theHarvester -d [domain name] -b [search engine / all] [options]
+
+### Examples
+- **1.List available options:**  
+  ```bash
+  theHarvester
+- **2.Search for emails in a domain:**  
+  ```bash
+  theHarvester -d wonderhowto.com -b all
+- **3.Search emails with a limit of results:**  
+  ```bash
+  theHarvester -d wonderhowto.com -b all -l 200
+- **4.Save the result to an HTML file:**  
+  ```bash
+  theHarvester -d microsoft.com -b all -h myresults.html
+- **Search only in PGP:**  
+  ```bash
+  theHarvester -d microsoft.com -b pgp 
+
+  
